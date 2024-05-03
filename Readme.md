@@ -1,11 +1,11 @@
-# Wirepas SDK for 5G
+# Wirepas SDK for 5G Mesh
 
 <img src="WCS-Icons-5gmesh.png" alt="drawing" width="200"/>
 
 
 ## Overview
 
-This repository hosts the __Wirepas SDK for 5G profiles__. It allows the development of an application
+This repository hosts the __Wirepas SDK for 5G Mesh profile__. It allows the development of an application
 to be executed on the same chip as Wirepas Stack.
 This application is often referred as a _Single-MCU application_.
 
