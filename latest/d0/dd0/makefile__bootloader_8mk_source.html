@@ -128,30 +128,30 @@ $(document).ready(function(){initNavTree('d0/dd0/makefile__bootloader_8mk_source
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    @echo &quot;$(COLOR_INFO)Select bootloader from the image folder$(COLOR_END)&quot;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    $(DD)$(MKDIR) $(@D)</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    $(eval key_type=$(shell $(BOOT_CONF) --in_file $(BOOTLOADER_CONFIG_INI) --get_key_type))</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    $(DD)$(FMW_SEL) --firmware_path=$(IMAGE_PATH)\</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                --firmware_type=&quot;wp_bootloader&quot;\</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                --version=$(MIN_BOOTLOADER_VERSION)\</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                --output_path=$(@D)\</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                --output_name=&quot;bootloader&quot;\</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                --key_type=$(key_type)\</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                --unlocked=$(unprotected)\</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                --mcu=$(MCU)\</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                --mcu_sub=$(MCU_SUB)\</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                --mcu_mem_var=$(MCU_MEM_VAR)</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    $(DD)$(FMW_SEL) --firmware_path=$(IMAGE_PATH) \</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                    --firmware_type=&quot;wp_bootloader&quot; \</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                    --version=$(MIN_BOOTLOADER_VERSION) \</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                    --output_path=$(@D) \</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                    --output_name=&quot;bootloader&quot; \</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                    --key_type=$(key_type) \</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                    --unlocked=$(unprotected) \</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                    --mcu=$(MCU) \</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                    --mcu_sub=$(MCU_SUB) \</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                    --mcu_mem_var=$(MCU_MEM_VAR)</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;$(BL_BUILDPREFIX)%.o : %.c</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    @echo &quot;$(COLOR_CC)CC$(COLOR_END) $&lt;&quot;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    $(DD)@$(MKDIR) $(@D)</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    $(DD)$(MKDIR) $(@D)</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    $(D)$(CC) $(INCLUDES) $(CFLAGS) -c $&lt; -o $@</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;$(BOOTLOADER_ELF): $(OBJS) $(BOOTLOADER_SRC)</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    $(DD)$(MKDIR) $(@D)</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    @echo &quot;$(COLOR_INFO)Linking with the provided lib:$(COLOR_END) $(BOOTLOADER_SRC)&quot;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    $(D)$(CC) $(CFLAGS) $(LDFLAGS) -o $@ $^ $(BOOTLOADER_SRC)\</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;          -Wl,--defsym,__bl_length__=$(bootloader_area_length) \</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;          -Wl,-Map=$(BL_BUILDPREFIX)bootloader.map \</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;          -Wl,-T,$(LDSCRIPT) $(LIBS)</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    $(D)$(CC) $(CFLAGS) $(LDFLAGS) -o $@ $^ $(BOOTLOADER_SRC) \</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;              -Wl,--defsym,__bl_length__=$(bootloader_area_length) \</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;              -Wl,-Map=$(BL_BUILDPREFIX)bootloader.map \</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;              -Wl,-T,$(LDSCRIPT) $(LIBS)</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;$(BOOTLOADER_HEX): $(BOOTLOADER_ELF)</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    $(DD)$(MKDIR) $(@D)</div>
@@ -162,7 +162,7 @@ $(document).ready(function(){initNavTree('d0/dd0/makefile__bootloader_8mk_source
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;all: $(BOOTLOADER_HEX)</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;clean:</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    $(RM) -rf $(CLEAN)</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    $(D)$(RM) -rf $(CLEAN)</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;# Special ruel to force other rule to run every time</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;FORCE:</div>

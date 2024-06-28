@@ -12,7 +12,9 @@ var external__flash__gd25wb256e_8h =
     [ "GD25WB256E_CMD_READ_IDENTIFICATION", "d7/db3/external__flash__gd25wb256e_8h.html#a99fb83031ce9923c84392b4e92f956b5a8395a9eedac93d10118025028dc3c139", null ],
     [ "ext_flash_status1_t", "d7/db3/external__flash__gd25wb256e_8h.html#ab3111f7387a846c644ad9dff5623757c", [
       [ "GD25WB256E_STATUS_WIP", "d7/db3/external__flash__gd25wb256e_8h.html#ab3111f7387a846c644ad9dff5623757ca2bc765edf57f302cd3a6879f0e71777f", null ],
-      [ "GD25WB256E_STATUS_WEL", "d7/db3/external__flash__gd25wb256e_8h.html#ab3111f7387a846c644ad9dff5623757cad7f8314953a029fe3db351f4ecc2942b", null ]
+      [ "GD25WB256E_STATUS_WEL", "d7/db3/external__flash__gd25wb256e_8h.html#ab3111f7387a846c644ad9dff5623757cad7f8314953a029fe3db351f4ecc2942b", null ],
+      [ "GD25LE255E_STATUS_WIP", "dd/df6/external__flash__gd25le255e_8h.html#ab3111f7387a846c644ad9dff5623757ca3071017dbeffe4f90803faa5bc13894a", null ],
+      [ "GD25LE255E_STATUS_WEL", "dd/df6/external__flash__gd25le255e_8h.html#ab3111f7387a846c644ad9dff5623757ca6f7197c7580e64473299f401ef9096d5", null ]
     ] ],
     [ "GD25WB256E_ID_1", "d7/db3/external__flash__gd25wb256e_8h.html#a47497be433cde8a7f974fb533fec5fd5", null ],
     [ "GD25WB256E_ID_2", "d7/db3/external__flash__gd25wb256e_8h.html#a732ea2398788562e8c2bbbd2e143507f", null ],

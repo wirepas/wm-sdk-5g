@@ -17,8 +17,8 @@ var wms__system_8h =
       [ "setShutdownCb", "df/d6b/wms__system_8h.html#a36577f886a9aec8b4669303f150f36f4", null ],
       [ "setStartupCb", "df/d6b/wms__system_8h.html#aa56da74fee961e058c91425d1625eaf3", null ]
     ] ],
-    [ "app_lib_system_clear_pending_fast_app_irq_f", "df/d6b/wms__system_8h.html#a78d8ae0139ed4a5617d5fd7ac5feadd2", null ],
-    [ "app_lib_system_disable_app_irq_f", "df/d6b/wms__system_8h.html#ae871f054c8d6cf9441d1c2a362efdd1d", null ],
+    [ "app_lib_system_clear_pending_fast_app_irq_f", "df/d6b/wms__system_8h.html#af5d491f03b4efa69487be0a7d24ce6f9", null ],
+    [ "app_lib_system_disable_app_irq_f", "df/d6b/wms__system_8h.html#a6af5e19d5cb4b5a304fda524ceb3963f", null ],
     [ "app_lib_system_disable_deep_sleep", "df/d6b/wms__system_8h.html#a8e2cb074dc572f44ebc7a615ebfd6a07", null ],
     [ "app_lib_system_enable_app_irq_f", "df/d6b/wms__system_8h.html#aba69b45321bbdf1ae6def106715d8f53", null ],
     [ "app_lib_system_enable_app_irq_with_handler_f", "df/d6b/wms__system_8h.html#a350a09c1934fdd3217523f328e2ed833", null ],

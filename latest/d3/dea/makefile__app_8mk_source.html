@@ -174,7 +174,7 @@ $(document).ready(function(){initNavTree('d3/dea/makefile__app_8mk_source.html',
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;CLEAN := $(OBJS) $(APP_ELF) $(APP_HEX) $(DEPS)</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;$(BUILDPREFIX_APP)%.o : %.c $(APP_SRCS_PATH)makefile $(APP_CONFIG) $(BOARD_CONFIG) $(MCU_CONFIG)</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    $(DD)@$(MKDIR) $(@D)</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    $(DD)$(MKDIR) $(@D)</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    @echo &quot;$(COLOR_CC)CC$(COLOR_END) $&lt;&quot;</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    $(D)$(CC) $(INCLUDES) $(CFLAGS) -MMD -MP -c $&lt; -o $@</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
@@ -194,7 +194,7 @@ $(document).ready(function(){initNavTree('d3/dea/makefile__app_8mk_source.html',
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;$(APP_HEX): $(APP_ELF)</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    @echo &quot;$(COLOR_DETAILS)CFLAGS are:\n $(CFLAGS)$(COLOR_END)&quot;</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    @echo &quot;$(COLOR_DETAILS)LDFLAGS are:\n $(LDFLAGS)$(COLOR_END)&quot;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    @echo &quot;$(COLOR_INFO)Generating:$(COLOR_END) $(APP_HEX)&quot;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    @echo &quot;$(COLOR_INFO)Generating:$(COLOR_END) $@&quot;</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    $(D)@$(OBJCOPY) $&lt; -O ihex $@</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;.PHONY: $(VERSION_FILE)</div>

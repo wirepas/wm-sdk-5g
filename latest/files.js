@@ -10,9 +10,11 @@ var files =
     [ "util", "dir_23ec12649285f9fabf3a6b7380226c28.html", "dir_23ec12649285f9fabf3a6b7380226c28" ],
     [ "config.mk", "d6/d6f/config_8mk.html", null ],
     [ "makefile_app.mk", "d3/dea/makefile__app_8mk.html", null ],
+    [ "makefile_bl_updater.mk", "d0/d42/makefile__bl__updater_8mk.html", null ],
     [ "makefile_bootloader.mk", "d0/dd0/makefile__bootloader_8mk.html", null ],
     [ "makefile_bootloader_test.mk", "d7/d24/makefile__bootloader__test_8mk.html", null ],
     [ "makefile_color.mk", "db/d37/makefile__color_8mk.html", null ],
     [ "makefile_common.mk", "d0/d80/makefile__common_8mk.html", null ],
+    [ "makefile_scratchpad.mk", "d5/df2/makefile__scratchpad_8mk.html", null ],
     [ "makefile_stack.mk", "dd/dbc/makefile__stack_8mk.html", null ]
 ];

@@ -50,7 +50,7 @@ var NAVTREE =
         [ "Peripherals shared between the stack and the application", "dd/d6a/sdk_environment.html#peripherals_shared_between_the_stack_and_the_application2", null ],
         [ "Peripherals available for the application", "dd/d6a/sdk_environment.html#peripherals_available_for_the_application2", null ]
       ] ],
-      [ "Related Material", "dd/d6a/sdk_environment.html#autotoc_md3", null ]
+      [ "Related Material", "dd/d6a/sdk_environment.html#autotoc_md5", null ]
     ] ],
     [ "How to Develop Application with SDK", "de/d7a/how_to_develop.html", [
       [ "Pre-requirements", "de/d7a/how_to_develop.html#licensing", [
@@ -79,7 +79,7 @@ var NAVTREE =
         [ "Using platform specific storage", "de/d7a/how_to_develop.html#platform_specific_storage", null ],
         [ "Using a dedicated area in flash", "de/d7a/how_to_develop.html#dedicated_area", null ]
       ] ],
-      [ "Related Material", "de/d7a/how_to_develop.html#autotoc_md4", null ]
+      [ "Related Material", "de/d7a/how_to_develop.html#autotoc_md6", null ]
     ] ],
     [ "Single-MCU API Operation Principle", "d7/d28/application_operation.html", [
       [ "Build process", "d7/d28/application_operation.html#build", null ],
@@ -171,17 +171,18 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"d2/d9e/cbor_8h.html#a80de52f1e01c5c4a718780c734e33ee5",
-"d4/d01/libraries_2dualmcu_2waps_2sap_2persistent_8h.html#a703a0ed39c0a82b51953a54997d65195",
-"d5/d53/dsap__frames_8h.html#a7de09c4f3e12fae7ba512f50ad34ebe0",
-"d6/d50/wms__data_8h.html#a45089cc0ed8195699c2cb52c160e9b44",
-"d7/db3/external__flash__gd25wb256e_8h.html#a47497be433cde8a7f974fb533fec5fd5",
-"d8/d21/msap__frames_8h.html#ad07b7122297663a59732a29f0bbe5e6e",
-"da/d1b/function__codes_8h.html#a5d932513e8009c2280045fe336ff4138a664bac8ad0269ed186eba8acee731428",
-"db/db1/waps__frames_8h.html#aa014186b836ca0589945706229ae9fec",
-"dd/d2c/bl__interface_8h.html#aa8b1220e1f623a6b1e4a7aae240017d6",
-"de/d59/csap__frames_8h.html#affa7f91e558c86a776e25a749277ecfbac951cbd663a253eeae4f3b2b8a895080",
-"df/d99/wms__otap_8h.html#a4c4b909f059c1f84692494a0cdd5c957"
+"d2/d9e/cbor_8h.html#a4516af75999d76958b9dccf27611f661",
+"d3/dbf/aessw_8h.html#a3e4748528dcc1a0dd120de622084f695",
+"d4/dd5/indication__signal_8h_source.html",
+"d6/d15/wms__memory__area_8h.html#a315eaca5f84b1f4cf42ea15ed82e32ff",
+"d6/da5/attribute__frames_8h.html#a727941d0a408460f847e0d4de02562af",
+"d8/d21/msap__frames_8h.html#a746ab8c576a3c936ac0bddf2f4f6ed05",
+"d9/d53/wms__time_8h.html#a15e994fb5d9a74436a5d4771b4e13d13",
+"da/dc2/sl__list_8h.html#a83852438122eef689f7b7f4f6fc799ec",
+"dd/d2c/bl__interface_8h.html#a3819ab9bd420adcf9b7e2df3671190cf",
+"dd/ddc/app__scheduler_8h.html#a245a7f2a478b72e2d4a43b3c18676ab3a2379eda407c46922cc110cb05f4c93c7",
+"df/d6b/wms__system_8h.html#a055fd8a1c1565c12af35cd82010b2594a5c05e8f4e8d77c95c01bfb4014accf18",
+"globals_defs_f.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
