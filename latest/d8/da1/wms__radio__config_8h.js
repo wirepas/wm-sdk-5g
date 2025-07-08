@@ -24,10 +24,12 @@ var wms__radio__config_8h =
       [ "rx_gain_db", "d8/da1/wms__radio__config_8h.html#aa9cfc1ad54a3e032e49c49033c5a16db", null ]
     ] ],
     [ "app_lib_radio_cfg_t", "d8/da1/wms__radio__config_8h.html#de/d87/structapp__lib__radio__cfg__t", [
+      [ "bandSetup", "d8/da1/wms__radio__config_8h.html#a1f5361cc10de102bbaa57a92576f9fac", null ],
       [ "femSetup", "d8/da1/wms__radio__config_8h.html#aa6e6417b37d0dddc03c2caa9c41af352", null ],
       [ "paSetup", "d8/da1/wms__radio__config_8h.html#a47609edb46f3fa2afd4ffd312608919c", null ],
       [ "powerSetup", "d8/da1/wms__radio__config_8h.html#afa91c703d40fd4e0488c1b2b078d15ba", null ]
     ] ],
+    [ "app_lib_radio_cfg_band_setup_f", "d8/da1/wms__radio__config_8h.html#acbfc9353034bfaefb71368ccadfbbda9", null ],
     [ "app_lib_radio_cfg_fem_cmd_cb_f", "d8/da1/wms__radio__config_8h.html#a2a04457fc78ab5db9339cfa5eafdc8d5", null ],
     [ "app_lib_radio_cfg_fem_set_power_cb_f", "d8/da1/wms__radio__config_8h.html#aac3240e302e32e1edae779e568f1e86a", null ],
     [ "app_lib_radio_cfg_fem_setup_f", "d8/da1/wms__radio__config_8h.html#a7ca2ce224399b2cc02288b7aeeb19331", null ],
@@ -40,6 +42,11 @@ var wms__radio__config_8h =
       [ "APP_LIB_RADIO_CFG_FEM_PWR_ON", "d8/da1/wms__radio__config_8h.html#a198f7a8d83d5a6f34a323d2ca02000e9aa46be437c9d7ac664940091e30df50cf", null ],
       [ "APP_LIB_RADIO_CFG_FEM_PWR_OFF", "d8/da1/wms__radio__config_8h.html#a198f7a8d83d5a6f34a323d2ca02000e9aa61ff2f7d313a9359a9aadf09fc74ad1", null ]
     ] ],
+    [ "APP_LIB_DECT_BAND_1", "d8/da1/wms__radio__config_8h.html#a0f65faf8cb2fb81d34b85d7380957d41", null ],
+    [ "APP_LIB_DECT_BAND_2", "d8/da1/wms__radio__config_8h.html#ad79df01d6c7b8b8a96ad9f5ddc70a054", null ],
+    [ "APP_LIB_DECT_BAND_22", "d8/da1/wms__radio__config_8h.html#a62cdfff7f405890925bd8bf5d7dcfc90", null ],
+    [ "APP_LIB_DECT_BAND_4", "d8/da1/wms__radio__config_8h.html#a0690521c4e0ea44e7723c15e0133c518", null ],
+    [ "APP_LIB_DECT_BAND_9", "d8/da1/wms__radio__config_8h.html#a3b006c0e2176ee2eb2a68b5ab1b704fb", null ],
     [ "APP_LIB_RADIO_CFG_CURRENT_MAX", "d8/da1/wms__radio__config_8h.html#a80b3fe636d9c9226276fbebbeb0c849b", null ],
     [ "APP_LIB_RADIO_CFG_CURRENT_MIN", "d8/da1/wms__radio__config_8h.html#a83c88c1fcb443f47b60a896dd170a682", null ],
     [ "APP_LIB_RADIO_CFG_NAME", "d8/da1/wms__radio__config_8h.html#ad2f5996b476330efcc9b9242196acaf9", null ],

@@ -17,6 +17,13 @@
 <script type="text/javascript" src="../../navtree.js"></script>
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(function() {
+    if ($('.searchresults').length > 0) { searchBox.DOMSearchField().focus(); }
+  });
+  /* @license-end */
+</script>
 <link rel="search" href="../../search_opensearch.php?v=opensearch.xml" type="application/opensearchdescription+xml" title="Wirepas SDK"/>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 <link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
@@ -47,19 +54,33 @@
 var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 /* @license-end */
 </script>
-<script type="text/javascript" src="../../menudata.js"></script>
-<script type="text/javascript" src="../../menu.js"></script>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(function() {
-  initMenu('../../',true,true,'search.html','Search');
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-  $(document).ready(function() {
-    if ($('.searchresults').length > 0) { searchBox.DOMSearchField().focus(); }
-  });
-});
-/* @license-end */</script>
-<div id="main-nav"></div>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="../../pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="../../annotated.html"><span>Data&#160;Structures</span></a></li>
+      <li class="current"><a href="../../files.html"><span>Files</span></a></li>
+      <li><a href="../../examples.html"><span>Example&#160;applications</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+          <div class="left">
+            <form id="FSearchBox" action="../../search.html" method="get">
+              <img id="MSearchSelect" src="../../search/mag.png" alt=""/>
+              <input type="text" id="MSearchField" name="query" value="Search" size="20" accesskey="S" 
+                     onfocus="searchBox.OnSearchFieldFocus(true)" 
+                     onblur="searchBox.OnSearchFieldFocus(false)"/>
+            </form>
+          </div><div class="right"></div>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../files.html"><span>File&#160;List</span></a></li>
+      <li><a href="../../globals.html"><span>Globals</span></a></li>
+    </ul>
+  </div>
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
   <div id="nav-tree">
@@ -589,7 +610,7 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<h2><a class="anchor" id="autotoc_md3"></a>
+<h2><a class="anchor" id="autotoc_md4"></a>
 NRF_P0  SW_pin  PCA20064                Notes (recommended usage)</h2>
 <p>P0.00 0 VCOM0_TXD P0.01 1 VCOM0_RXD P0.02 2 VCOM0_CTS P0.03 3 VCOM0_RTS P0.04 4 VCOM1_TXD P0.05 5 VCOM1_RXD P0.06 6 VCOM1_CTS P0.07 7 VCOM1_RTS P0.08 8 I2C-SCL P0.09 9 I2C-SDA P0.10 10 UART_IRQ ?? Not sure about this P0.11 11 ACC_INT P0.12 12 FLASH_CS P0.13 13 SPI_SCK P0.14 14 SPI_MOSI P0.15 15 SPI_MISO P0.16 16 WIFI_IRQ P0.17 17 WIFI_CS P0.18 18 EXP_BOARD_PIN2 P0.19 19 EXP_BOARD_PIN1 P0.20 20 nRF53_RESET P0.21 21 TRACE_CLK P0.22 22 TRACE_DATA0 P0.23 23 TRACE_DATA1 P0.24 24 TRACE_DATA2 P0.25 25 TRACE_DATA3 P0.26 26 BUTTON1 P0.27 27 WIFI_VDDIO_EN P0.28 28 WIFI_EN P0.29 29 LED1_RED P0.30 30 LED1_BLUE P0.31 31 LED1_GREEN </p>
 
