@@ -17,13 +17,6 @@
 <script type="text/javascript" src="../../navtree.js"></script>
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-  $(document).ready(function() {
-    if ($('.searchresults').length > 0) { searchBox.DOMSearchField().focus(); }
-  });
-  /* @license-end */
-</script>
 <link rel="search" href="../../search_opensearch.php?v=opensearch.xml" type="application/opensearchdescription+xml" title="Wirepas SDK"/>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 <link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
@@ -54,33 +47,19 @@
 var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 /* @license-end */
 </script>
-  <div id="navrow1" class="tabs">
-    <ul class="tablist">
-      <li><a href="../../index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="../../pages.html"><span>Related&#160;Pages</span></a></li>
-      <li><a href="../../annotated.html"><span>Data&#160;Structures</span></a></li>
-      <li class="current"><a href="../../files.html"><span>Files</span></a></li>
-      <li><a href="../../examples.html"><span>Example&#160;applications</span></a></li>
-      <li>
-        <div id="MSearchBox" class="MSearchBoxInactive">
-          <div class="left">
-            <form id="FSearchBox" action="../../search.html" method="get">
-              <img id="MSearchSelect" src="../../search/mag.png" alt=""/>
-              <input type="text" id="MSearchField" name="query" value="Search" size="20" accesskey="S" 
-                     onfocus="searchBox.OnSearchFieldFocus(true)" 
-                     onblur="searchBox.OnSearchFieldFocus(false)"/>
-            </form>
-          </div><div class="right"></div>
-        </div>
-      </li>
-    </ul>
-  </div>
-  <div id="navrow2" class="tabs2">
-    <ul class="tablist">
-      <li><a href="../../files.html"><span>File&#160;List</span></a></li>
-      <li><a href="../../globals.html"><span>Globals</span></a></li>
-    </ul>
-  </div>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('../../',true,true,'search.html','Search');
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(function() {
+    if ($('.searchresults').length > 0) { searchBox.DOMSearchField().focus(); }
+  });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
   <div id="nav-tree">
@@ -301,7 +280,7 @@ Keys are only set if node address was not set before calling this function to av
 <p>Wrapper on top of configureNode to get parameters from build system and hardcoded values from chip (for unique node address) The value must be defined in app confik.mk file at build time. </p>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="../../da/dbb/wms__app_8h.html#a4d380466f2a9f6432a6abcabf44c8e80a003dcdf43ec0474fb1190cdccd959122">APP_RES_OK</a> if the configuration is successful, an error code otherwise </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>Calling this function without setting a network address and channel in your config.mk will result in an error at execution time </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="../../d0/dd1/appconfig_2app_8c-example.html#a21">appconfig/app.c</a>, <a class="el" href="../../db/d83/custom_app_2app_8c-example.html#a24">custom_app/app.c</a>, <a class="el" href="../../d7/db8/minimal_app_2app_8c-example.html#a2">minimal_app/app.c</a>, <a class="el" href="../../d5/da9/provisioning_joining_node_2app_8c-example.html#a9">provisioning_joining_node/app.c</a>, <a class="el" href="../../db/d30/provisioning_proxy_2app_8c-example.html#a14">provisioning_proxy/app.c</a>, <a class="el" href="../../d6/da1/scheduler_2app_8c-example.html#a7">scheduler/app.c</a>, and <a class="el" href="../../d5/d87/shared_data_2app_8c-example.html#a37">shared_data/app.c</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="../../d0/dd1/appconfig_2app_8c-example.html#a21">appconfig/app.c</a>, <a class="el" href="../../db/d83/custom_app_2app_8c-example.html#a24">custom_app/app.c</a>, <a class="el" href="../../d7/db8/minimal_app_2app_8c-example.html#a1">minimal_app/app.c</a>, <a class="el" href="../../d6/da1/scheduler_2app_8c-example.html#a7">scheduler/app.c</a>, and <a class="el" href="../../d5/d87/shared_data_2app_8c-example.html#a37">shared_data/app.c</a>.</dd>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="../../df/d2e/node__configuration_8h_source.html#l00224">224</a> of file <a class="el" href="../../df/d2e/node__configuration_8h_source.html">node_configuration.h</a>.</p>

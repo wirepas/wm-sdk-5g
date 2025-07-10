@@ -17,13 +17,6 @@
 <script type="text/javascript" src="../../navtree.js"></script>
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-  $(document).ready(function() {
-    if ($('.searchresults').length > 0) { searchBox.DOMSearchField().focus(); }
-  });
-  /* @license-end */
-</script>
 <link rel="search" href="../../search_opensearch.php?v=opensearch.xml" type="application/opensearchdescription+xml" title="Wirepas SDK"/>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 <link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
@@ -54,33 +47,19 @@
 var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 /* @license-end */
 </script>
-  <div id="navrow1" class="tabs">
-    <ul class="tablist">
-      <li><a href="../../index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="../../pages.html"><span>Related&#160;Pages</span></a></li>
-      <li><a href="../../annotated.html"><span>Data&#160;Structures</span></a></li>
-      <li class="current"><a href="../../files.html"><span>Files</span></a></li>
-      <li><a href="../../examples.html"><span>Example&#160;applications</span></a></li>
-      <li>
-        <div id="MSearchBox" class="MSearchBoxInactive">
-          <div class="left">
-            <form id="FSearchBox" action="../../search.html" method="get">
-              <img id="MSearchSelect" src="../../search/mag.png" alt=""/>
-              <input type="text" id="MSearchField" name="query" value="Search" size="20" accesskey="S" 
-                     onfocus="searchBox.OnSearchFieldFocus(true)" 
-                     onblur="searchBox.OnSearchFieldFocus(false)"/>
-            </form>
-          </div><div class="right"></div>
-        </div>
-      </li>
-    </ul>
-  </div>
-  <div id="navrow2" class="tabs2">
-    <ul class="tablist">
-      <li><a href="../../files.html"><span>File&#160;List</span></a></li>
-      <li><a href="../../globals.html"><span>Globals</span></a></li>
-    </ul>
-  </div>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('../../',true,true,'search.html','Search');
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(function() {
+    if ($('.searchresults').length > 0) { searchBox.DOMSearchField().focus(); }
+  });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
   <div id="nav-tree">
@@ -577,7 +556,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d2/d9e/cbor_8h_source.html#l00250">250</a> of file <a class="el" href="../../d2/d9e/cbor_8h_source.html">cbor.h</a>.</p>
 <div class="fragment"><div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;{</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    <span class="keywordflow">return</span> encoder-&gt;<a class="code" href="../../d2/d9e/cbor_8h.html#abd328d3dc966cc63b16e5229be1435f9">data</a>.ptr;</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    <span class="keywordflow">return</span> encoder-&gt;<a class="code" href="../../d2/d9e/cbor_8h.html#a8c5f39b66e6276b87c78d2e1456f995a">data</a>.ptr;</div>
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
@@ -1367,7 +1346,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d2/d9e/cbor_8h_source.html#l00255">255</a> of file <a class="el" href="../../d2/d9e/cbor_8h_source.html">cbor.h</a>.</p>
 <div class="fragment"><div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;{</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    <span class="keywordflow">return</span> (<span class="keywordtype">size_t</span>)(encoder-&gt;<a class="code" href="../../d2/d9e/cbor_8h.html#abd328d3dc966cc63b16e5229be1435f9">data</a>.ptr - buffer);</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    <span class="keywordflow">return</span> (<span class="keywordtype">size_t</span>)(encoder-&gt;<a class="code" href="../../d2/d9e/cbor_8h.html#a8c5f39b66e6276b87c78d2e1456f995a">data</a>.ptr - buffer);</div>
 <div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
@@ -1398,7 +1377,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d2/d9e/cbor_8h_source.html#l00260">260</a> of file <a class="el" href="../../d2/d9e/cbor_8h_source.html">cbor.h</a>.</p>
 <div class="fragment"><div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;{</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    <span class="keywordflow">return</span> encoder-&gt;<a class="code" href="../../d2/d9e/cbor_8h.html#a1a9c887147aec6839c2433e29b78285f">end</a> ? 0 : (size_t)encoder-&gt;<a class="code" href="../../d2/d9e/cbor_8h.html#abd328d3dc966cc63b16e5229be1435f9">data</a>.bytes_needed;</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    <span class="keywordflow">return</span> encoder-&gt;<a class="code" href="../../d2/d9e/cbor_8h.html#a1a9c887147aec6839c2433e29b78285f">end</a> ? 0 : (size_t)encoder-&gt;<a class="code" href="../../d2/d9e/cbor_8h.html#a8c5f39b66e6276b87c78d2e1456f995a">data</a>.bytes_needed;</div>
 <div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
@@ -3401,7 +3380,7 @@ Variables</h2></td></tr>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a id="abd328d3dc966cc63b16e5229be1435f9"></a>union <a class="el" href="../../d2/d9e/cbor_8h.html#d1/de2/union_cbor_encoder_8data">CborEncoder</a></td>
+<a id="a8c5f39b66e6276b87c78d2e1456f995a"></a>union <a class="el" href="../../d2/d9e/cbor_8h.html#d1/de2/union_cbor_encoder_8data">CborEncoder</a></td>
 <td class="fieldname">
 data</td>
 <td class="fielddoc">
@@ -4382,7 +4361,6 @@ ptr</td>
 <div class="ttc" id="acbor_8h_html_a5bb267524d18a9b6aae5065b42e2c118"><div class="ttname"><a href="../../d2/d9e/cbor_8h.html#a5bb267524d18a9b6aae5065b42e2c118">cbor_value_is_boolean</a></div><div class="ttdeci">static bool cbor_value_is_boolean(const CborValue *value)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d9e/cbor_8h_source.html#l00328">cbor.h:328</a></div></div>
 <div class="ttc" id="acbor_8h_html_a76e9c9acc63dd940da4ab7e91309f7b5aaacfd2a1b315ed43c4a5a9d999d31abd"><div class="ttname"><a href="../../d2/d9e/cbor_8h.html#a76e9c9acc63dd940da4ab7e91309f7b5aaacfd2a1b315ed43c4a5a9d999d31abd">CborErrorExcludedValue</a></div><div class="ttdeci">@ CborErrorExcludedValue</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d9e/cbor_8h_source.html#l00177">cbor.h:177</a></div></div>
 <div class="ttc" id="acbor_8h_html_acc03414f6f6313d18ae5c56d4167d798a234d5e6507be077cf1f60e4923328095"><div class="ttname"><a href="../../d2/d9e/cbor_8h.html#acc03414f6f6313d18ae5c56d4167d798a234d5e6507be077cf1f60e4923328095">CborPrettyIndicateIndeterminateLength</a></div><div class="ttdeci">@ CborPrettyIndicateIndeterminateLength</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d9e/cbor_8h_source.html#l00572">cbor.h:572</a></div></div>
-<div class="ttc" id="acbor_8h_html_abd328d3dc966cc63b16e5229be1435f9"><div class="ttname"><a href="../../d2/d9e/cbor_8h.html#abd328d3dc966cc63b16e5229be1435f9">CborEncoder::data</a></div><div class="ttdeci">union CborEncoder::@16 data</div></div>
 <div class="ttc" id="acbor_8h_html_a76e9c9acc63dd940da4ab7e91309f7b5a3f3b20b4b696c4784d8d383f6f2c0f29"><div class="ttname"><a href="../../d2/d9e/cbor_8h.html#a76e9c9acc63dd940da4ab7e91309f7b5a3f3b20b4b696c4784d8d383f6f2c0f29">CborErrorImproperValue</a></div><div class="ttdeci">@ CborErrorImproperValue</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d9e/cbor_8h_source.html#l00178">cbor.h:178</a></div></div>
 <div class="ttc" id="acbor_8h_html_ac7df91cad1cba43d5d0103284fc390fca17175a41250776b00d00f892ce00425e"><div class="ttname"><a href="../../d2/d9e/cbor_8h.html#ac7df91cad1cba43d5d0103284fc390fca17175a41250776b00d00f892ce00425e">CborValidateNoUnknownSimpleTypes</a></div><div class="ttdeci">@ CborValidateNoUnknownSimpleTypes</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d9e/cbor_8h_source.html#l00553">cbor.h:553</a></div></div>
 <div class="ttc" id="acbor_8h_html_acc03414f6f6313d18ae5c56d4167d798ae9292598081dcaf886a2ff656d6f753f"><div class="ttname"><a href="../../d2/d9e/cbor_8h.html#acc03414f6f6313d18ae5c56d4167d798ae9292598081dcaf886a2ff656d6f753f">CborPrettyIndicateOverlongNumbers</a></div><div class="ttdeci">@ CborPrettyIndicateOverlongNumbers</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d9e/cbor_8h_source.html#l00574">cbor.h:574</a></div></div>
@@ -4504,6 +4482,7 @@ ptr</td>
 <div class="ttc" id="acbor_8h_html_a76e9c9acc63dd940da4ab7e91309f7b5a4b308cc6b53f935d0d2856e3f32e5170"><div class="ttname"><a href="../../d2/d9e/cbor_8h.html#a76e9c9acc63dd940da4ab7e91309f7b5a4b308cc6b53f935d0d2856e3f32e5170">CborErrorUnsupportedType</a></div><div class="ttdeci">@ CborErrorUnsupportedType</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d9e/cbor_8h_source.html#l00191">cbor.h:191</a></div></div>
 <div class="ttc" id="acbor_8h_html_a38f51ceba8bc8a9b1cf7dd31e3f9c178a959e9111a04cb3bf4fe0d296a1fe94d2"><div class="ttname"><a href="../../d2/d9e/cbor_8h.html#a38f51ceba8bc8a9b1cf7dd31e3f9c178a959e9111a04cb3bf4fe0d296a1fe94d2">CborDoubleType</a></div><div class="ttdeci">@ CborDoubleType</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d9e/cbor_8h_source.html#l00095">cbor.h:95</a></div></div>
 <div class="ttc" id="acbor_8h_html_ac7df91cad1cba43d5d0103284fc390fca10336f196bcefe891702c93f163e6681"><div class="ttname"><a href="../../d2/d9e/cbor_8h.html#ac7df91cad1cba43d5d0103284fc390fca10336f196bcefe891702c93f163e6681">CborValidateBasic</a></div><div class="ttdeci">@ CborValidateBasic</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d9e/cbor_8h_source.html#l00561">cbor.h:561</a></div></div>
+<div class="ttc" id="acbor_8h_html_a8c5f39b66e6276b87c78d2e1456f995a"><div class="ttname"><a href="../../d2/d9e/cbor_8h.html#a8c5f39b66e6276b87c78d2e1456f995a">CborEncoder::data</a></div><div class="ttdeci">union CborEncoder::@11 data</div></div>
 <div class="ttc" id="acbor_8h_html_ae229fcb50cb076c9e1426b0849fbe800"><div class="ttname"><a href="../../d2/d9e/cbor_8h.html#ae229fcb50cb076c9e1426b0849fbe800">CborCOSE_Encrypt0Tag</a></div><div class="ttdeci">#define CborCOSE_Encrypt0Tag</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d9e/cbor_8h_source.html#l00133">cbor.h:133</a></div></div>
 <div class="ttc" id="acbor_8h_html_abf77a802de8b5c7f061e5dba201499aa"><div class="ttname"><a href="../../d2/d9e/cbor_8h.html#abf77a802de8b5c7f061e5dba201499aa">cbor_value_is_text_string</a></div><div class="ttdeci">static bool cbor_value_is_text_string(const CborValue *value)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d9e/cbor_8h_source.html#l00407">cbor.h:407</a></div></div>
 <div class="ttc" id="acbor_8h_html_a93897c06089709e75a0c34f49737e76b"><div class="ttname"><a href="../../d2/d9e/cbor_8h.html#a93897c06089709e75a0c34f49737e76b">cbor_value_is_float</a></div><div class="ttdeci">static bool cbor_value_is_float(const CborValue *value)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d9e/cbor_8h_source.html#l00497">cbor.h:497</a></div></div>
