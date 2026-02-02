@@ -36,21 +36,14 @@ var NAVTREE =
     [ "SDK Environment setup", "dd/d6a/sdk_environment.html", [
       [ "Installation of SDK Environment", "dd/d6a/sdk_environment.html#installation_of_sdk_environment", null ],
       [ "Flashing devices", "dd/d6a/sdk_environment.html#flashing_guideline", null ],
-      [ "Resources on Nordic nRF52", "dd/d6a/sdk_environment.html#nordic_resources", [
-        [ "Flash Memory available for application on nRF52", "dd/d6a/sdk_environment.html#flash_memory_nrf52", null ],
-        [ "RAM Memory available for application on nRF52", "dd/d6a/sdk_environment.html#ram_memory_nrf52", null ],
-        [ "Peripherals accessible by stack only", "dd/d6a/sdk_environment.html#peripherals_accessible_by_stack_only", null ],
-        [ "Peripherals shared between the stack and the application", "dd/d6a/sdk_environment.html#peripherals_shared_between_the_stack_and_the_application", null ],
-        [ "Peripherals available for the application", "dd/d6a/sdk_environment.html#peripherals_available_for_the_application", null ]
+      [ "Resources on Nordic nRF91x1", "dd/d6a/sdk_environment.html#nordic_resources", [
+        [ "Flash Memory available for application on nRF91x1", "dd/d6a/sdk_environment.html#flash_memory_nrf91x1", null ],
+        [ "RAM Memory available for application on nRF91x1", "dd/d6a/sdk_environment.html#ram_memory_nrf91x1", null ],
+        [ "Peripherals accessible by stack only", "dd/d6a/sdk_environment.html#peripherals_accessible_by_stack_only_nrf91x1", null ],
+        [ "Peripherals shared between the stack and the application", "dd/d6a/sdk_environment.html#peripherals_shared_between_the_stack_and_the_application_nrf91x1", null ],
+        [ "Peripherals available for the application", "dd/d6a/sdk_environment.html#peripherals_available_for_the_application_nrf91x1", null ]
       ] ],
-      [ "Resources on EFR32", "dd/d6a/sdk_environment.html#efr32_resources", [
-        [ "Flash Memory available for application on EFR32", "dd/d6a/sdk_environment.html#flash_memory_efr32", null ],
-        [ "RAM Memory available for application on EFR32", "dd/d6a/sdk_environment.html#ram_memory_efr32", null ],
-        [ "Peripherals accessible by stack only", "dd/d6a/sdk_environment.html#peripherals_accessible_by_stack_only2", null ],
-        [ "Peripherals shared between the stack and the application", "dd/d6a/sdk_environment.html#peripherals_shared_between_the_stack_and_the_application2", null ],
-        [ "Peripherals available for the application", "dd/d6a/sdk_environment.html#peripherals_available_for_the_application2", null ]
-      ] ],
-      [ "Related Material", "dd/d6a/sdk_environment.html#autotoc_md5", null ]
+      [ "Related Material", "dd/d6a/sdk_environment.html#autotoc_md6", null ]
     ] ],
     [ "How to Develop Application with SDK", "de/d7a/how_to_develop.html", [
       [ "Pre-requirements", "de/d7a/how_to_develop.html#licensing", [
@@ -79,7 +72,7 @@ var NAVTREE =
         [ "Using platform specific storage", "de/d7a/how_to_develop.html#platform_specific_storage", null ],
         [ "Using a dedicated area in flash", "de/d7a/how_to_develop.html#dedicated_area", null ]
       ] ],
-      [ "Related Material", "de/d7a/how_to_develop.html#autotoc_md6", null ]
+      [ "Related Material", "de/d7a/how_to_develop.html#autotoc_md7", null ]
     ] ],
     [ "Single-MCU API Operation Principle", "d7/d28/application_operation.html", [
       [ "Build process", "d7/d28/application_operation.html#build", null ],
@@ -136,6 +129,7 @@ var NAVTREE =
         [ "HAL_UART", "d5/d7b/application_examples.html#source_makefile_hal_uart", null ],
         [ "INCLUDES", "d5/d7b/application_examples.html#source_makefile_includes", null ],
         [ "LDFLAGS", "d5/d7b/application_examples.html#source_makefile_ldflags", null ],
+        [ "LDLIBS", "d5/d7b/application_examples.html#source_makefile_ldlibs", null ],
         [ "LIBS", "d5/d7b/application_examples.html#source_makefile_libs", null ],
         [ "PROVISIONING", "d5/d7b/application_examples.html#source_makefile_provisioning", null ],
         [ "PROVISIONING_PROXY", "d5/d7b/application_examples.html#source_makefile_provisioning_proxy", null ],
@@ -145,24 +139,29 @@ var NAVTREE =
       ] ],
       [ "Tools", "d5/d7b/application_examples.html#tools_folder", [
         [ "genscratchpad.py", "d5/d7b/application_examples.html#genscratchpad_py", null ],
-        [ "INI_FILE", "d5/d7b/application_examples.html#config_mk_ini_file", null ]
+        [ "Bootloader and scratchpad .ini files", "d5/d7b/application_examples.html#config_mk_ini_file", null ],
+        [ "name_to_uint32.py", "d5/d7b/application_examples.html#name_to_uint32_py", null ]
       ] ]
     ] ],
-    [ "Data Structures", "annotated.html", "annotated" ],
-    [ "Data Fields", "functions.html", [
-      [ "All", "functions.html", "functions_dup" ],
-      [ "Functions", "functions_func.html", null ],
-      [ "Variables", "functions_vars.html", "functions_vars" ]
+    [ "Data Structures", "annotated.html", [
+      [ "Data Structures", "annotated.html", "annotated_dup" ],
+      [ "Data Fields", "functions.html", [
+        [ "All", "functions.html", "functions_dup" ],
+        [ "Functions", "functions_func.html", null ],
+        [ "Variables", "functions_vars.html", "functions_vars" ]
+      ] ]
     ] ],
-    [ "File List", "files.html", "files" ],
-    [ "Globals", "globals.html", [
-      [ "All", "globals.html", "globals_dup" ],
-      [ "Functions", "globals_func.html", "globals_func" ],
-      [ "Variables", "globals_vars.html", null ],
-      [ "Typedefs", "globals_type.html", null ],
-      [ "Enumerations", "globals_enum.html", null ],
-      [ "Enumerator", "globals_eval.html", "globals_eval" ],
-      [ "Macros", "globals_defs.html", "globals_defs" ]
+    [ "Files", "files.html", [
+      [ "File List", "files.html", "files_dup" ],
+      [ "Globals", "globals.html", [
+        [ "All", "globals.html", "globals_dup" ],
+        [ "Functions", "globals_func.html", "globals_func" ],
+        [ "Variables", "globals_vars.html", null ],
+        [ "Typedefs", "globals_type.html", "globals_type" ],
+        [ "Enumerations", "globals_enum.html", null ],
+        [ "Enumerator", "globals_eval.html", "globals_eval" ],
+        [ "Macros", "globals_defs.html", "globals_defs" ]
+      ] ]
     ] ],
     [ "Example applications", "examples.html", "examples" ]
   ] ]
@@ -171,18 +170,20 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"d2/d9e/cbor_8h.html#a4516af75999d76958b9dccf27611f661",
-"d3/dbf/aessw_8h.html#a3e4748528dcc1a0dd120de622084f695",
-"d4/dd5/indication__signal_8h_source.html",
-"d6/d15/wms__memory__area_8h.html#a315eaca5f84b1f4cf42ea15ed82e32ff",
-"d6/da5/attribute__frames_8h.html#a727941d0a408460f847e0d4de02562af",
-"d8/d21/msap__frames_8h.html#a746ab8c576a3c936ac0bddf2f4f6ed05",
-"d9/d53/wms__time_8h.html#a15e994fb5d9a74436a5d4771b4e13d13",
-"da/dc2/sl__list_8h.html#a83852438122eef689f7b7f4f6fc799ec",
-"dd/d2c/bl__interface_8h.html#a3819ab9bd420adcf9b7e2df3671190cf",
-"dd/ddc/app__scheduler_8h.html#a245a7f2a478b72e2d4a43b3c18676ab3a2379eda407c46922cc110cb05f4c93c7",
-"df/d6b/wms__system_8h.html#a055fd8a1c1565c12af35cd82010b2594a5c05e8f4e8d77c95c01bfb4014accf18",
-"globals_defs_f.html"
+"d2/d43/compilersupport__p_8h.html#adba3934b16539fdaf7cb43ef27d9ae48",
+"d2/d9e/cbor_8h.html#ade6fa23a8fb3df9db434c69ca05d5ec1a2bbd089870757fddb6e08269f281b9ad",
+"d4/d27/wms__state_8h.html#a42584f0a814c647a1d733326491a5e43",
+"d5/d53/dsap__frames_8h.html#db/d71/structdsap__data__tx__frag__req__t",
+"d6/d50/wms__data_8h.html#aa03fbf2cdb28616e79aca69710c8b134a2c19a7699397df7b39155e4711bb762e",
+"d7/db3/external__flash__gd25wb256e_8h.html#adc29c2ff13d900c2f185ee95427fb06ca2e77f6709ec645b71b0eb8e3d1878129",
+"d8/d21/msap__frames_8h.html#aac52d153cf2fc2b39c4b36f58c2d500f",
+"d9/d27/provisioning__int_8h.html#aee542072e8ed4c6421604a90538f9dc2a9c062e96b8a51d81a67313b6b66d7471",
+"da/d1b/function__codes_8h.html#a5d932513e8009c2280045fe336ff4138ae295880f81c2880fbbe82dff772bccfb",
+"dc/d1b/rtc_8h.html#ad8acb73066972c2bbb5266e8a7b1254d",
+"dd/d2c/bl__interface_8h.html#abe48ebab96082c5c01ce0138b04ea55e",
+"de/d59/csap__frames_8h.html#affa7f91e558c86a776e25a749277ecfba5fbb0b0cda1085fc06f80b71e7daae59",
+"df/d6b/wms__system_8h.html#a055fd8a1c1565c12af35cd82010b2594a7f19392bb7901d7af8492a6b519e2675",
+"dir_63f034141c75d69ae84d9b10c256a1af.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

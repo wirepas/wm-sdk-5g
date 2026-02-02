@@ -40,6 +40,7 @@ var bl__interface_8h =
       [ "length", "dd/d2c/bl__interface_8h.html#aebb70c2aab3407a9f05334c47131a43b", null ],
       [ "modem_fw_data", "dd/d2c/bl__interface_8h.html#a7c68edb7cd013f0568212be69aad75ba", null ],
       [ "modem_fw_length", "dd/d2c/bl__interface_8h.html#a49bae84d4572f8a790ac41b2c9a657a7", null ],
+      [ "modem_fw_type", "dd/d2c/bl__interface_8h.html#a49c952c08096e3abf60613fea2a81c12", null ],
       [ "seq", "dd/d2c/bl__interface_8h.html#a3f47451edd2274525a52e40f4e26c399", null ],
       [ "status", "dd/d2c/bl__interface_8h.html#ade20423e91627f07e610924cb0081623", null ],
       [ "type", "dd/d2c/bl__interface_8h.html#ad44b615021ed3ccb734fcaf583ef4a03", null ]
@@ -107,7 +108,8 @@ var bl__interface_8h =
       [ "BL_RES_PARAM", "dd/d2c/bl__interface_8h.html#a9a1d6078d92f4d46b59e7f80ef16b898afb4414d01fa614225f3716184ac8c9d3", null ],
       [ "BL_RES_INVALID_AREA", "dd/d2c/bl__interface_8h.html#a9a1d6078d92f4d46b59e7f80ef16b898a44dab6e6be58bd1cdba9747cbb5fb47a", null ],
       [ "BL_RES_TIMEOUT", "dd/d2c/bl__interface_8h.html#a9a1d6078d92f4d46b59e7f80ef16b898a2ab1d6279ea7f577784720607c222cef", null ],
-      [ "BL_RES_INVALID_STATE", "dd/d2c/bl__interface_8h.html#a9a1d6078d92f4d46b59e7f80ef16b898a5dac3bfc8056c46f46bf86fb4dcaa225", null ]
+      [ "BL_RES_INVALID_STATE", "dd/d2c/bl__interface_8h.html#a9a1d6078d92f4d46b59e7f80ef16b898a5dac3bfc8056c46f46bf86fb4dcaa225", null ],
+      [ "BL_RES_INVALID_TAG", "dd/d2c/bl__interface_8h.html#a9a1d6078d92f4d46b59e7f80ef16b898a5f76afb3ca0f83914f568ac913a27b31", null ]
     ] ],
     [ "bl_memory_area_type_e", "dd/d2c/bl__interface_8h.html#a827b71e6d5cdcaa075983c98ddc7563d", [
       [ "BL_MEM_AREA_TYPE_BOOTLOADER", "dd/d2c/bl__interface_8h.html#a827b71e6d5cdcaa075983c98ddc7563da154df4370ce1d216531e69893a307807", null ],
@@ -118,6 +120,11 @@ var bl__interface_8h =
       [ "BL_MEM_AREA_TYPE_USER", "dd/d2c/bl__interface_8h.html#a827b71e6d5cdcaa075983c98ddc7563dab805c0d10c777c77f21b80944278f296", null ],
       [ "BL_MEM_AREA_TYPE_MODEMFW", "dd/d2c/bl__interface_8h.html#a827b71e6d5cdcaa075983c98ddc7563da36cba8d8d256bf7b87e7ee18bc4d898e", null ],
       [ "BL_MEM_AREA_TYPE_MODEMDELTAFW", "dd/d2c/bl__interface_8h.html#a827b71e6d5cdcaa075983c98ddc7563da9201be259944386a54e31d6ee5ccd574", null ]
+    ] ],
+    [ "bl_scrat_modem_file_type_e", "dd/d2c/bl__interface_8h.html#a47563e507911f3a052d8171f90e93742", [
+      [ "BL_SCRAT_MODEM_FILE_TYPE_FULL_IMAGE", "dd/d2c/bl__interface_8h.html#a47563e507911f3a052d8171f90e93742a261ba3b4b8ff92d70b2a6f9fc51610d0", null ],
+      [ "BL_SCRAT_MODEM_FILE_TYPE_DELTA_IMAGE", "dd/d2c/bl__interface_8h.html#a47563e507911f3a052d8171f90e93742a205ed9bb3c67fbe573a4594cc9c09826", null ],
+      [ "BL_SCRAT_MODEM_FILE_TYPE_INVALID", "dd/d2c/bl__interface_8h.html#a47563e507911f3a052d8171f90e93742a32d7e2c5f5e71837168b48cef685185d", null ]
     ] ],
     [ "bl_scrat_type_e", "dd/d2c/bl__interface_8h.html#abcd1a4851130b269c0f236bde1ff9568", [
       [ "BL_SCRAT_TYPE_BLANK", "dd/d2c/bl__interface_8h.html#abcd1a4851130b269c0f236bde1ff9568a86cc25ea6cf3de5ca7abaa37bfc61f40", null ],

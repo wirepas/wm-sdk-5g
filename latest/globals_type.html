@@ -17,6 +17,13 @@
 <script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(function() {
+    if ($('.searchresults').length > 0) { searchBox.DOMSearchField().focus(); }
+  });
+  /* @license-end */
+</script>
 <link rel="search" href="search_opensearch.php?v=opensearch.xml" type="application/opensearchdescription+xml" title="Wirepas SDK"/>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
@@ -47,19 +54,62 @@
 var searchBox = new SearchBox("searchBox", "search",false,'Search');
 /* @license-end */
 </script>
-<script type="text/javascript" src="menudata.js"></script>
-<script type="text/javascript" src="menu.js"></script>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(function() {
-  initMenu('',true,true,'search.html','Search');
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-  $(document).ready(function() {
-    if ($('.searchresults').length > 0) { searchBox.DOMSearchField().focus(); }
-  });
-});
-/* @license-end */</script>
-<div id="main-nav"></div>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
+      <li class="current"><a href="files.html"><span>Files</span></a></li>
+      <li><a href="examples.html"><span>Example&#160;applications</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+          <div class="left">
+            <form id="FSearchBox" action="search.html" method="get">
+              <img id="MSearchSelect" src="search/mag.png" alt=""/>
+              <input type="text" id="MSearchField" name="query" value="Search" size="20" accesskey="S" 
+                     onfocus="searchBox.OnSearchFieldFocus(true)" 
+                     onblur="searchBox.OnSearchFieldFocus(false)"/>
+            </form>
+          </div><div class="right"></div>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li class="current"><a href="globals.html"><span>Globals</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow3" class="tabs2">
+    <ul class="tablist">
+      <li><a href="globals.html"><span>All</span></a></li>
+      <li><a href="globals_func.html"><span>Functions</span></a></li>
+      <li><a href="globals_vars.html"><span>Variables</span></a></li>
+      <li class="current"><a href="globals_type.html"><span>Typedefs</span></a></li>
+      <li><a href="globals_enum.html"><span>Enumerations</span></a></li>
+      <li><a href="globals_eval.html"><span>Enumerator</span></a></li>
+      <li><a href="globals_defs.html"><span>Macros</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow4" class="tabs3">
+    <ul class="tablist">
+      <li class="current"><a href="globals_type.html#index_a"><span>a</span></a></li>
+      <li><a href="globals_type_b.html#index_b"><span>b</span></a></li>
+      <li><a href="globals_type_c.html#index_c"><span>c</span></a></li>
+      <li><a href="globals_type_e.html#index_e"><span>e</span></a></li>
+      <li><a href="globals_type_g.html#index_g"><span>g</span></a></li>
+      <li><a href="globals_type_h.html#index_h"><span>h</span></a></li>
+      <li><a href="globals_type_i.html#index_i"><span>i</span></a></li>
+      <li><a href="globals_type_n.html#index_n"><span>n</span></a></li>
+      <li><a href="globals_type_o.html#index_o"><span>o</span></a></li>
+      <li><a href="globals_type_p.html#index_p"><span>p</span></a></li>
+      <li><a href="globals_type_r.html#index_r"><span>r</span></a></li>
+      <li><a href="globals_type_s.html#index_s"><span>s</span></a></li>
+      <li><a href="globals_type_t.html#index_t"><span>t</span></a></li>
+      <li><a href="globals_type_w.html#index_w"><span>w</span></a></li>
+    </ul>
+  </div>
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
   <div id="nav-tree">
@@ -99,8 +149,17 @@ $(document).ready(function(){initNavTree('globals_type.html',''); initResizable(
 <li>app_lib_data_data_sent_cb_f
 : <a class="el" href="d6/d50/wms__data_8h.html#ad4532c2af19fb5161fd44dd3d806be38">wms_data.h</a>
 </li>
+<li>app_lib_data_disable_boot_diagnostics_f
+: <a class="el" href="d6/d50/wms__data_8h.html#a9f74d7e82ce1454b1cccc0ec2031f460">wms_data.h</a>
+</li>
+<li>app_lib_data_get_all_config_data_endpoints_f
+: <a class="el" href="d6/d50/wms__data_8h.html#a0fee82cb0b37cc0069352dabe7ae025b">wms_data.h</a>
+</li>
 <li>app_lib_data_get_app_config_num_bytes_f
 : <a class="el" href="d6/d50/wms__data_8h.html#a37af27daa2e4777b89b13f2f8440b8b9">wms_data.h</a>
+</li>
+<li>app_lib_data_get_config_data_item_f
+: <a class="el" href="d6/d50/wms__data_8h.html#af188f75bb6012b292b08e93771f5c371">wms_data.h</a>
 </li>
 <li>app_lib_data_get_data_max_num_bytes_f
 : <a class="el" href="d6/d50/wms__data_8h.html#ab009dfe9504a81d9938b1d863d4a93db">wms_data.h</a>
@@ -114,11 +173,17 @@ $(document).ready(function(){initNavTree('globals_type.html',''); initResizable(
 <li>app_lib_data_new_app_config_cb_f
 : <a class="el" href="d6/d50/wms__data_8h.html#aca1298154f7a3d7be77c64ca602639ed">wms_data.h</a>
 </li>
+<li>app_lib_data_new_config_data_item_cb_f
+: <a class="el" href="d6/d50/wms__data_8h.html#af3b731e4b55dd49490913e17f2c7a197">wms_data.h</a>
+</li>
 <li>app_lib_data_read_app_config_f
 : <a class="el" href="d6/d50/wms__data_8h.html#a96f7b21d1f7992439c9526b3a4d27530">wms_data.h</a>
 </li>
 <li>app_lib_data_send_data_f
 : <a class="el" href="d6/d50/wms__data_8h.html#a9ae6095889898db72257eeca385eee7b">wms_data.h</a>
+</li>
+<li>app_lib_data_set_config_data_item_f
+: <a class="el" href="d6/d50/wms__data_8h.html#a69ac79c096cae0e747496be4c681b53f">wms_data.h</a>
 </li>
 <li>app_lib_data_set_data_received_cb_f
 : <a class="el" href="d6/d50/wms__data_8h.html#a108548eef01aa6b4e3db667ef3c1c780">wms_data.h</a>
@@ -134,6 +199,9 @@ $(document).ready(function(){initNavTree('globals_type.html',''); initResizable(
 </li>
 <li>app_lib_data_set_new_app_config_cb_f
 : <a class="el" href="d6/d50/wms__data_8h.html#abcc8bb343266f3fc98d25590ed9a66a6">wms_data.h</a>
+</li>
+<li>app_lib_data_set_new_config_data_item_cb_f
+: <a class="el" href="d6/d50/wms__data_8h.html#a82e2c31af97ae5b9ef38e1ef262589b8">wms_data.h</a>
 </li>
 <li>app_lib_data_tracking_id_t
 : <a class="el" href="d6/d50/wms__data_8h.html#a3a8535cade8b081cfee20f0f4b9b0e65">wms_data.h</a>
@@ -152,6 +220,33 @@ $(document).ready(function(){initNavTree('globals_type.html',''); initResizable(
 </li>
 <li>app_lib_hardware_is_peripheral_activated_f
 : <a class="el" href="d0/dda/wms__hardware_8h.html#a19ccdc2ffd4e102c7b9e5fa28704dc3d">wms_hardware.h</a>
+</li>
+<li>app_lib_joining_beacon_rx_cb_f
+: <a class="el" href="df/dc7/wms__joining_8h.html#a70a1f571247428452c5ff1846f8520e2">wms_joining.h</a>
+</li>
+<li>app_lib_joining_enable_proxy_f
+: <a class="el" href="df/dc7/wms__joining_8h.html#a73c9363aa56bee0827bd3a11f9811263">wms_joining.h</a>
+</li>
+<li>app_lib_joining_enable_remote_api_f
+: <a class="el" href="df/dc7/wms__joining_8h.html#a11999a3d1664d844dc0ab8639336adc3">wms_joining.h</a>
+</li>
+<li>app_lib_joining_start_joining_beacon_rx_f
+: <a class="el" href="df/dc7/wms__joining_8h.html#a8b9363f464604cbe35d7b3fd55517efb">wms_joining.h</a>
+</li>
+<li>app_lib_joining_start_joining_beacon_tx_f
+: <a class="el" href="df/dc7/wms__joining_8h.html#ac8cf6984a4c8f98675fc912043814d16">wms_joining.h</a>
+</li>
+<li>app_lib_joining_start_joining_process_f
+: <a class="el" href="df/dc7/wms__joining_8h.html#a3d34515460bb95b014b258af71dc641f">wms_joining.h</a>
+</li>
+<li>app_lib_joining_stop_joining_beacon_rx_f
+: <a class="el" href="df/dc7/wms__joining_8h.html#a9206c5610842c7a75a39e9673ef03bfb">wms_joining.h</a>
+</li>
+<li>app_lib_joining_stop_joining_beacon_tx_f
+: <a class="el" href="df/dc7/wms__joining_8h.html#ac476f8a1824c78fb172a4ce7e41c4d78">wms_joining.h</a>
+</li>
+<li>app_lib_joining_stop_joining_process_f
+: <a class="el" href="df/dc7/wms__joining_8h.html#ad23c2c9482314a8d863e736189fcc108">wms_joining.h</a>
 </li>
 <li>app_lib_mem_area_getAreaInfo_f
 : <a class="el" href="d6/d15/wms__memory__area_8h.html#a657c3609457e933b99086f7a32201171">wms_memory_area.h</a>
@@ -240,6 +335,9 @@ $(document).ready(function(){initNavTree('globals_type.html',''); initResizable(
 <li>app_lib_otap_write_f
 : <a class="el" href="df/d99/wms__otap_8h.html#a4ddcacb42e945d34f805fc347d5ccc12">wms_otap.h</a>
 </li>
+<li>app_lib_radio_cfg_band_setup_f
+: <a class="el" href="d8/da1/wms__radio__config_8h.html#acbfc9353034bfaefb71368ccadfbbda9">wms_radio_config.h</a>
+</li>
 <li>app_lib_radio_cfg_fem_cmd_cb_f
 : <a class="el" href="d8/da1/wms__radio__config_8h.html#a2a04457fc78ab5db9339cfa5eafdc8d5">wms_radio_config.h</a>
 </li>
@@ -254,6 +352,21 @@ $(document).ready(function(){initNavTree('globals_type.html',''); initResizable(
 </li>
 <li>app_lib_radio_cfg_power_setup_f
 : <a class="el" href="d8/da1/wms__radio__config_8h.html#a240178b3846089db5606a4485c2cc99a">wms_radio_config.h</a>
+</li>
+<li>app_lib_secure_storage_delete_record_f
+: <a class="el" href="dc/d82/wms__secure__storage_8h.html#ade4e047f715d234814f6dc2d50b6adf2">wms_secure_storage.h</a>
+</li>
+<li>app_lib_secure_storage_init_area_f
+: <a class="el" href="dc/d82/wms__secure__storage_8h.html#a2fe889e62ac1e9c1a22336e341d93cfa">wms_secure_storage.h</a>
+</li>
+<li>app_lib_secure_storage_read_record_f
+: <a class="el" href="dc/d82/wms__secure__storage_8h.html#a9dfd0bd205e46d7a64a36f17d0c709f1">wms_secure_storage.h</a>
+</li>
+<li>app_lib_secure_storage_record_tag_t
+: <a class="el" href="dc/d82/wms__secure__storage_8h.html#a240da97fe327cab98f51c403607e81da">wms_secure_storage.h</a>
+</li>
+<li>app_lib_secure_storage_write_record_f
+: <a class="el" href="dc/d82/wms__secure__storage_8h.html#acb64497df375d374aa17640f817523df">wms_secure_storage.h</a>
 </li>
 <li>app_lib_settings_get_ac_range_f
 : <a class="el" href="df/d62/wms__settings_8h.html#a81ceb0e7dd252eca631602fa78a00993">wms_settings.h</a>
@@ -309,11 +422,38 @@ $(document).ready(function(){initNavTree('globals_type.html',''); initResizable(
 <li>app_lib_settings_is_valid_node_role_f
 : <a class="el" href="df/d62/wms__settings_8h.html#ab0d387c21ebd3cd12fa25e7d44561fb0">wms_settings.h</a>
 </li>
+<li>app_lib_settings_key_management_config_f
+: <a class="el" href="df/d62/wms__settings_8h.html#aade490b8661f267de1a302242b7afdf9">wms_settings.h</a>
+</li>
 <li>app_lib_settings_net_addr_t
 : <a class="el" href="df/d62/wms__settings_8h.html#a69db270642a7b444986c801131fcbd66">wms_settings.h</a>
 </li>
 <li>app_lib_settings_net_channel_t
 : <a class="el" href="df/d62/wms__settings_8h.html#af0559e67154ec6b6dc9c34ccad540861">wms_settings.h</a>
+</li>
+<li>app_lib_settings_register_remote_api_csap_cancel_cb_f
+: <a class="el" href="df/d62/wms__settings_8h.html#a298e80094d3211c334adeab299eea5cb">wms_settings.h</a>
+</li>
+<li>app_lib_settings_register_remote_api_csap_read_cb_f
+: <a class="el" href="df/d62/wms__settings_8h.html#ae38fda5f4d6c4cb0d87f6766a1a3de0b">wms_settings.h</a>
+</li>
+<li>app_lib_settings_register_remote_api_csap_update_cb_f
+: <a class="el" href="df/d62/wms__settings_8h.html#a16921412765c39a68a72e33f97ae36b5">wms_settings.h</a>
+</li>
+<li>app_lib_settings_register_remote_api_csap_write_cb_f
+: <a class="el" href="df/d62/wms__settings_8h.html#ab1b30187dec9c028b6e7b94a2012b669">wms_settings.h</a>
+</li>
+<li>app_lib_settings_remote_api_csap_cancel_f
+: <a class="el" href="df/d62/wms__settings_8h.html#a2ba16db91ce74f7e206964eb81ec877c">wms_settings.h</a>
+</li>
+<li>app_lib_settings_remote_api_csap_read_f
+: <a class="el" href="df/d62/wms__settings_8h.html#acdc6211887948c47bf1c37301f47571c">wms_settings.h</a>
+</li>
+<li>app_lib_settings_remote_api_csap_update_f
+: <a class="el" href="df/d62/wms__settings_8h.html#ab5595093751eb628bf02025075cf9b31">wms_settings.h</a>
+</li>
+<li>app_lib_settings_remote_api_csap_write_f
+: <a class="el" href="df/d62/wms__settings_8h.html#a05f0a9e4bfc067323187b42c760753e5">wms_settings.h</a>
 </li>
 <li>app_lib_settings_reset_all_f
 : <a class="el" href="df/d62/wms__settings_8h.html#a140d39369516a938d1348ac86e65e0a2">wms_settings.h</a>
@@ -424,13 +564,13 @@ $(document).ready(function(){initNavTree('globals_type.html',''); initResizable(
 : <a class="el" href="df/d6b/wms__system_8h.html#a8e2cb074dc572f44ebc7a615ebfd6a07">wms_system.h</a>
 </li>
 <li>app_lib_system_enable_app_irq_f
-: <a class="el" href="df/d6b/wms__system_8h.html#aba69b45321bbdf1ae6def106715d8f53">wms_system.h</a>
+: <a class="el" href="df/d6b/wms__system_8h.html#a495ed489fe3f2798e0e8ea3e97613925">wms_system.h</a>
 </li>
 <li>app_lib_system_enable_app_irq_with_handler_f
-: <a class="el" href="df/d6b/wms__system_8h.html#a350a09c1934fdd3217523f328e2ed833">wms_system.h</a>
+: <a class="el" href="df/d6b/wms__system_8h.html#a87c4cf1d5da280010817d89268efc528">wms_system.h</a>
 </li>
 <li>app_lib_system_enable_fast_app_irq_f
-: <a class="el" href="df/d6b/wms__system_8h.html#abcd8e635b24b98636060c1385e637c8d">wms_system.h</a>
+: <a class="el" href="df/d6b/wms__system_8h.html#a5105827cbb9754763eb96a7fcd30ad9f">wms_system.h</a>
 </li>
 <li>app_lib_system_enter_critical_section_f
 : <a class="el" href="df/d6b/wms__system_8h.html#a5ba9aa0bc74144cd4ba0590021549eae">wms_system.h</a>
@@ -449,9 +589,6 @@ $(document).ready(function(){initNavTree('globals_type.html',''); initResizable(
 </li>
 <li>app_lib_system_periodic_cb_f
 : <a class="el" href="df/d6b/wms__system_8h.html#a02052ff659d623710fa0733a82a110b4">wms_system.h</a>
-</li>
-<li>app_lib_system_register_app_irq_table_f
-: <a class="el" href="df/d6b/wms__system_8h.html#a24c6d7cb04fc971ae8d60c2e51ea5cd7">wms_system.h</a>
 </li>
 <li>app_lib_system_set_periodic_cb_f
 : <a class="el" href="df/d6b/wms__system_8h.html#a3bbe9181ed7a154eb9d2baf96f337701">wms_system.h</a>
@@ -500,199 +637,6 @@ $(document).ready(function(){initNavTree('globals_type.html',''); initResizable(
 </li>
 <li>attr_t
 : <a class="el" href="db/db1/waps__frames_8h.html#a4e0d5999f05d5d98291245accf2bd6b9">waps_frames.h</a>
-</li>
-</ul>
-
-
-<h3><a id="index_b"></a>- b -</h3><ul>
-<li>bitfield_t
-: <a class="el" href="d3/dbc/bitfield_8h.html#a60bf084aeeb87dbe547327fbfd30017b">bitfield.h</a>
-</li>
-<li>bl_memory_area_getAreaHeader_f
-: <a class="el" href="dd/d2c/bl__interface_8h.html#a9aee550ac0d15d2569c2090e8786dd17">bl_interface.h</a>
-</li>
-<li>bl_memory_area_getAreaInfo_f
-: <a class="el" href="dd/d2c/bl__interface_8h.html#a5fb3900f9b422fb576ff07a737a1de66">bl_interface.h</a>
-</li>
-<li>bl_memory_area_getAreaList_f
-: <a class="el" href="dd/d2c/bl__interface_8h.html#a2a0621cceb3524809381675f1403429c">bl_interface.h</a>
-</li>
-<li>bl_memory_area_getIdfromType_f
-: <a class="el" href="dd/d2c/bl__interface_8h.html#a0d576b9c7b5fd16e56b35e2423723741">bl_interface.h</a>
-</li>
-<li>bl_memory_area_getMaxNumAreas_f
-: <a class="el" href="dd/d2c/bl__interface_8h.html#a716604172a93c3a18999e8d2be9cfdfc">bl_interface.h</a>
-</li>
-<li>bl_memory_area_id_t
-: <a class="el" href="dd/d2c/bl__interface_8h.html#aca9fb4e5bd1294dd6c03fd2d87881eaa">bl_interface.h</a>
-</li>
-<li>bl_memory_area_isBusy_f
-: <a class="el" href="dd/d2c/bl__interface_8h.html#ad2dca2b4052fa7e38a7617ed2e4cc7d9">bl_interface.h</a>
-</li>
-<li>bl_memory_area_startErase_f
-: <a class="el" href="dd/d2c/bl__interface_8h.html#aab92cc49d01944ed1b8184df2fa92eea">bl_interface.h</a>
-</li>
-<li>bl_memory_area_startRead_f
-: <a class="el" href="dd/d2c/bl__interface_8h.html#acbb819507d940a4e44b7c919079b173f">bl_interface.h</a>
-</li>
-<li>bl_memory_area_startWrite_f
-: <a class="el" href="dd/d2c/bl__interface_8h.html#ab55515696634e18f590e8f54cb7ab461">bl_interface.h</a>
-</li>
-<li>bl_scrat_begin_f
-: <a class="el" href="dd/d2c/bl__interface_8h.html#a8efcf129eb910cf2c6b8177e4afea5b7">bl_interface.h</a>
-</li>
-<li>bl_scrat_clear_f
-: <a class="el" href="dd/d2c/bl__interface_8h.html#a46785bd9106188b60252c64f7613f419">bl_interface.h</a>
-</li>
-<li>bl_scrat_getInfo_f
-: <a class="el" href="dd/d2c/bl__interface_8h.html#aa691912b1f952358843a0d2b7b77d642">bl_interface.h</a>
-</li>
-<li>bl_scrat_getValidity_f
-: <a class="el" href="dd/d2c/bl__interface_8h.html#aaee1e05709b70d3c30b1b5e59aa139cf">bl_interface.h</a>
-</li>
-<li>bl_scrat_read_f
-: <a class="el" href="dd/d2c/bl__interface_8h.html#a340ed48afb839a9e8fe28106e805503a">bl_interface.h</a>
-</li>
-<li>bl_scrat_setBootable_f
-: <a class="el" href="dd/d2c/bl__interface_8h.html#adff3b843f46e4448e823aa862ad5eead">bl_interface.h</a>
-</li>
-<li>bl_scrat_setStatus_f
-: <a class="el" href="dd/d2c/bl__interface_8h.html#a6827135d74f55d9e970bfb15410d7c28">bl_interface.h</a>
-</li>
-<li>bl_scrat_write_f
-: <a class="el" href="dd/d2c/bl__interface_8h.html#ac65bde741bce8da8e08d37416e367f4f">bl_interface.h</a>
-</li>
-</ul>
-
-
-<h3><a id="index_c"></a>- c -</h3><ul>
-<li>CborStreamFunction
-: <a class="el" href="d2/d9e/cbor_8h.html#a0e224903378a7f25477f0c6e6d803b88">cbor.h</a>
-</li>
-<li>CborTag
-: <a class="el" href="d2/d9e/cbor_8h.html#a1e767d4ba4cde0c284f42305758b34ff">cbor.h</a>
-</li>
-</ul>
-
-
-<h3><a id="index_e"></a>- e -</h3><ul>
-<li>ep_t
-: <a class="el" href="db/db1/waps__frames_8h.html#aee71d80c96b47076b17640ee902138a2">waps_frames.h</a>
-</li>
-</ul>
-
-
-<h3><a id="index_g"></a>- g -</h3><ul>
-<li>get_api_version_compatible_f
-: <a class="el" href="da/dbb/wms__app_8h.html#ad6cb21e8cfc14ab5f3b4d342edf777f2">wms_app.h</a>
-</li>
-<li>gpio_id_t
-: <a class="el" href="d6/d7c/gpio_8h.html#a255f46622dd13a0f7982fe4401fac72e">gpio.h</a>
-</li>
-<li>gpio_in_event_cb_f
-: <a class="el" href="d6/d7c/gpio_8h.html#abf033e8f149ed687ae0bea68b0ebebd0">gpio.h</a>
-</li>
-<li>gpio_pin_t
-: <a class="el" href="d6/d7c/gpio_8h.html#a38179eb7a46a743c12cfac28f347fb34">gpio.h</a>
-</li>
-<li>gpio_port_t
-: <a class="el" href="d6/d7c/gpio_8h.html#a5552fb7154b2931dffa4add605221200">gpio.h</a>
-</li>
-</ul>
-
-
-<h3><a id="index_h"></a>- h -</h3><ul>
-<li>hw_delay_callback_f
-: <a class="el" href="d2/d4c/hw__delay_8h.html#a4adc17ff2e749603b1a4a49e8b1609b7">hw_delay.h</a>
-</li>
-</ul>
-
-
-<h3><a id="index_i"></a>- i -</h3><ul>
-<li>i2c_on_transfer_done_cb_f
-: <a class="el" href="d5/daf/i2c_8h.html#a6d0a7e8f99cf04e9be1fe940a8c5d074">i2c.h</a>
-</li>
-</ul>
-
-
-<h3><a id="index_n"></a>- n -</h3><ul>
-<li>new_frame_cb_f
-: <a class="el" href="d8/d50/waps__comm_8h.html#ad4a71286b9468a6c6d6acd5e855e9430">waps_comm.h</a>
-</li>
-</ul>
-
-
-<h3><a id="index_o"></a>- o -</h3><ul>
-<li>on_button_event_cb
-: <a class="el" href="d7/d0e/button_8h.html#ab0179f583a301a62b85d1e1e5f803931">button.h</a>
-</li>
-<li>on_rtc_initialized
-: <a class="el" href="dc/d1b/rtc_8h.html#a047a66ff21b6bdc0c937e8d61aff1bec">rtc.h</a>
-</li>
-<li>otap_seq_t
-: <a class="el" href="d8/d21/msap__frames_8h.html#a8d7666ff0644df2ea150181acbfd86eb">msap_frames.h</a>
-</li>
-</ul>
-
-
-<h3><a id="index_p"></a>- p -</h3><ul>
-<li>pduid_t
-: <a class="el" href="db/db1/waps__frames_8h.html#ac976fc18c658ed6d8a9e9a3a045c7f18">waps_frames.h</a>
-</li>
-</ul>
-
-
-<h3><a id="index_r"></a>- r -</h3><ul>
-<li>radio_channel_t
-: <a class="el" href="de/d59/csap__frames_8h.html#a57d6b5c7c5454a8ffb6a4726a3c2ecdb">csap_frames.h</a>
-</li>
-<li>rtc_timestamp_t
-: <a class="el" href="dc/d1b/rtc_8h.html#ae772e2813a7313d20a870378f736e01e">rtc.h</a>
-</li>
-</ul>
-
-
-<h3><a id="index_s"></a>- s -</h3><ul>
-<li>serial_rx_callback_f
-: <a class="el" href="d3/dfa/mcu_2hal__api_2usart_8h.html#ae09c6e0da85cc67c6dc6a9310ca50bdf">usart.h</a>
-</li>
-<li>shared_app_config_received_cb_f
-: <a class="el" href="d2/d67/shared__appconfig_8h.html#a70a4acbdc6a340e8b5adbea4f5a6554a">shared_appconfig.h</a>
-</li>
-<li>shared_data_received_cb_f
-: <a class="el" href="d5/d74/shared__data_8h.html#a36fa713bcbf9a40aa7ad3a73c8463cc8">shared_data.h</a>
-</li>
-<li>spi_on_transfer_done_cb_f
-: <a class="el" href="da/d87/spi_8h.html#a088c7369a0a49362311110c0718f3572">spi.h</a>
-</li>
-<li>stack_state_event_cb_f
-: <a class="el" href="d5/dab/stack__state_8h.html#a4cb40903d4e2202ec3dd2482dea79e9f">stack_state.h</a>
-</li>
-</ul>
-
-
-<h3><a id="index_t"></a>- t -</h3><ul>
-<li>task_cb_f
-: <a class="el" href="dd/ddc/app__scheduler_8h.html#a06b7a823ab31a50859f715de74473a2d">app_scheduler.h</a>
-</li>
-</ul>
-
-
-<h3><a id="index_w"></a>- w -</h3><ul>
-<li>w_addr_t
-: <a class="el" href="db/db1/waps__frames_8h.html#a816e5cc1d03a10a8bcfbd56fa8554b5e">waps_frames.h</a>
-</li>
-<li>waps_free_item_threshold_cb_t
-: <a class="el" href="df/d52/waps__item_8h.html#ab73bd026be8376642d1a1bb8fe0f6346">waps_item.h</a>
-</li>
-<li>waps_post_tx_cb_f
-: <a class="el" href="df/d52/waps__item_8h.html#ad352b3efb61f858cd461a761822f1a02">waps_item.h</a>
-</li>
-<li>waps_pre_tx_cb_f
-: <a class="el" href="df/d52/waps__item_8h.html#a1704b1b12c9b09d0ada8e8c30044bba1">waps_item.h</a>
-</li>
-<li>waps_request_receive_f
-: <a class="el" href="d9/d47/waps__protocol_8h.html#ada95616cb72393bc1e884ac0deb337f9">waps_protocol.h</a>
 </li>
 </ul>
 </div><!-- contents -->

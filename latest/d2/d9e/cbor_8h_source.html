@@ -17,6 +17,13 @@
 <script type="text/javascript" src="../../navtree.js"></script>
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(function() {
+    if ($('.searchresults').length > 0) { searchBox.DOMSearchField().focus(); }
+  });
+  /* @license-end */
+</script>
 <link rel="search" href="../../search_opensearch.php?v=opensearch.xml" type="application/opensearchdescription+xml" title="Wirepas SDK"/>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 <link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
@@ -47,19 +54,33 @@
 var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 /* @license-end */
 </script>
-<script type="text/javascript" src="../../menudata.js"></script>
-<script type="text/javascript" src="../../menu.js"></script>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(function() {
-  initMenu('../../',true,true,'search.html','Search');
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-  $(document).ready(function() {
-    if ($('.searchresults').length > 0) { searchBox.DOMSearchField().focus(); }
-  });
-});
-/* @license-end */</script>
-<div id="main-nav"></div>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="../../pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="../../annotated.html"><span>Data&#160;Structures</span></a></li>
+      <li class="current"><a href="../../files.html"><span>Files</span></a></li>
+      <li><a href="../../examples.html"><span>Example&#160;applications</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+          <div class="left">
+            <form id="FSearchBox" action="../../search.html" method="get">
+              <img id="MSearchSelect" src="../../search/mag.png" alt=""/>
+              <input type="text" id="MSearchField" name="query" value="Search" size="20" accesskey="S" 
+                     onfocus="searchBox.OnSearchFieldFocus(true)" 
+                     onblur="searchBox.OnSearchFieldFocus(false)"/>
+            </form>
+          </div><div class="right"></div>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../files.html"><span>File&#160;List</span></a></li>
+      <li><a href="../../globals.html"><span>Globals</span></a></li>
+    </ul>
+  </div>
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
   <div id="nav-tree">
@@ -291,7 +312,7 @@ $(document).ready(function(){initNavTree('d2/d9e/cbor_8h_source.html','../../');
 <div class="line"><a name="l00207"></a><span class="lineno"><a class="line" href="../../d2/d9e/cbor_8h.html">  207</a></span>&#160;    <span class="keyword">union </span>{</div>
 <div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;        uint8_t *ptr;</div>
 <div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;        ptrdiff_t bytes_needed;</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    } <a class="code" href="../../d2/d9e/cbor_8h.html#a8c5f39b66e6276b87c78d2e1456f995a">data</a>;</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    } <a class="code" href="../../d2/d9e/cbor_8h.html#a2f9efd78b58bbbc4e32ffb3e63abcf05">data</a>;</div>
 <div class="line"><a name="l00211"></a><span class="lineno"><a class="line" href="../../d2/d9e/cbor_8h.html#a1a9c887147aec6839c2433e29b78285f">  211</a></span>&#160;    <span class="keyword">const</span> uint8_t *<a class="code" href="../../d2/d9e/cbor_8h.html#a1a9c887147aec6839c2433e29b78285f">end</a>;</div>
 <div class="line"><a name="l00212"></a><span class="lineno"><a class="line" href="../../d2/d9e/cbor_8h.html#ad701da283fb2b3da2e96be045e0ccfa0">  212</a></span>&#160;    <span class="keywordtype">size_t</span> <a class="code" href="../../d2/d9e/cbor_8h.html#ad701da283fb2b3da2e96be045e0ccfa0">remaining</a>;</div>
 <div class="line"><a name="l00213"></a><span class="lineno"><a class="line" href="../../d2/d9e/cbor_8h.html#ac8bf36fe0577cba66bccda3a6f7e80a4">  213</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="../../d2/d9e/cbor_8h.html#ac8bf36fe0577cba66bccda3a6f7e80a4">flags</a>;</div>
@@ -333,17 +354,17 @@ $(document).ready(function(){initNavTree('d2/d9e/cbor_8h_source.html','../../');
 <div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160; </div>
 <div class="line"><a name="l00250"></a><span class="lineno"><a class="line" href="../../d2/d9e/cbor_8h.html#aced882d68f61909311e4c4de1e23e9f9">  250</a></span>&#160;<a class="code" href="../../d2/d9e/cbor_8h.html#aab17a9d152466f224c2948eb50ecaa93">CBOR_INLINE_API</a> uint8_t *<a class="code" href="../../d2/d9e/cbor_8h.html#aced882d68f61909311e4c4de1e23e9f9">_cbor_encoder_get_buffer_pointer</a>(<span class="keyword">const</span> <a class="code" href="../../d2/d9e/cbor_8h.html#db/d79/struct_cbor_encoder">CborEncoder</a> *encoder)</div>
 <div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;{</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    <span class="keywordflow">return</span> encoder-&gt;<a class="code" href="../../d2/d9e/cbor_8h.html#a8c5f39b66e6276b87c78d2e1456f995a">data</a>.ptr;</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    <span class="keywordflow">return</span> encoder-&gt;<a class="code" href="../../d2/d9e/cbor_8h.html#a2f9efd78b58bbbc4e32ffb3e63abcf05">data</a>.ptr;</div>
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;}</div>
 <div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160; </div>
 <div class="line"><a name="l00255"></a><span class="lineno"><a class="line" href="../../d2/d9e/cbor_8h.html#a368f3bf4a6560132ab0be5f4b58a1ca2">  255</a></span>&#160;<a class="code" href="../../d2/d9e/cbor_8h.html#aab17a9d152466f224c2948eb50ecaa93">CBOR_INLINE_API</a> <span class="keywordtype">size_t</span> <a class="code" href="../../d2/d9e/cbor_8h.html#a368f3bf4a6560132ab0be5f4b58a1ca2">cbor_encoder_get_buffer_size</a>(<span class="keyword">const</span> <a class="code" href="../../d2/d9e/cbor_8h.html#db/d79/struct_cbor_encoder">CborEncoder</a> *encoder, <span class="keyword">const</span> uint8_t *buffer)</div>
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;{</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    <span class="keywordflow">return</span> (<span class="keywordtype">size_t</span>)(encoder-&gt;<a class="code" href="../../d2/d9e/cbor_8h.html#a8c5f39b66e6276b87c78d2e1456f995a">data</a>.ptr - buffer);</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    <span class="keywordflow">return</span> (<span class="keywordtype">size_t</span>)(encoder-&gt;<a class="code" href="../../d2/d9e/cbor_8h.html#a2f9efd78b58bbbc4e32ffb3e63abcf05">data</a>.ptr - buffer);</div>
 <div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;}</div>
 <div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160; </div>
 <div class="line"><a name="l00260"></a><span class="lineno"><a class="line" href="../../d2/d9e/cbor_8h.html#ad99181d757dd722fee09a96a863b3716">  260</a></span>&#160;<a class="code" href="../../d2/d9e/cbor_8h.html#aab17a9d152466f224c2948eb50ecaa93">CBOR_INLINE_API</a> <span class="keywordtype">size_t</span> <a class="code" href="../../d2/d9e/cbor_8h.html#ad99181d757dd722fee09a96a863b3716">cbor_encoder_get_extra_bytes_needed</a>(<span class="keyword">const</span> <a class="code" href="../../d2/d9e/cbor_8h.html#db/d79/struct_cbor_encoder">CborEncoder</a> *encoder)</div>
 <div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;{</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    <span class="keywordflow">return</span> encoder-&gt;<a class="code" href="../../d2/d9e/cbor_8h.html#a1a9c887147aec6839c2433e29b78285f">end</a> ? 0 : (size_t)encoder-&gt;<a class="code" href="../../d2/d9e/cbor_8h.html#a8c5f39b66e6276b87c78d2e1456f995a">data</a>.bytes_needed;</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    <span class="keywordflow">return</span> encoder-&gt;<a class="code" href="../../d2/d9e/cbor_8h.html#a1a9c887147aec6839c2433e29b78285f">end</a> ? 0 : (size_t)encoder-&gt;<a class="code" href="../../d2/d9e/cbor_8h.html#a2f9efd78b58bbbc4e32ffb3e63abcf05">data</a>.bytes_needed;</div>
 <div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;}</div>
 <div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160; </div>
 <div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;<span class="comment">/* Parser API */</span></div>
@@ -888,6 +909,7 @@ $(document).ready(function(){initNavTree('d2/d9e/cbor_8h_source.html','../../');
 <div class="ttc" id="acbor_8h_html_ab1f089a5ec31e41c0e6f2eece62d6d02"><div class="ttname"><a href="../../d2/d9e/cbor_8h.html#ab1f089a5ec31e41c0e6f2eece62d6d02">cbor_encoder_close_container</a></div><div class="ttdeci">CBOR_API CborError cbor_encoder_close_container(CborEncoder *encoder, const CborEncoder *containerEncoder)</div></div>
 <div class="ttc" id="acbor_8h_html_a52fc144be9e1ab899f21f80269134e32"><div class="ttname"><a href="../../d2/d9e/cbor_8h.html#a52fc144be9e1ab899f21f80269134e32">cbor_value_get_int64_checked</a></div><div class="ttdeci">CBOR_API CborError cbor_value_get_int64_checked(const CborValue *value, int64_t *result)</div></div>
 <div class="ttc" id="acbor_8h_html_acc03414f6f6313d18ae5c56d4167d798a4c64098a832744e84ede9437254ea069"><div class="ttname"><a href="../../d2/d9e/cbor_8h.html#acc03414f6f6313d18ae5c56d4167d798a4c64098a832744e84ede9437254ea069">CborPrettyNumericEncodingIndicators</a></div><div class="ttdeci">@ CborPrettyNumericEncodingIndicators</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d9e/cbor_8h_source.html#l00569">cbor.h:569</a></div></div>
+<div class="ttc" id="acbor_8h_html_a2f9efd78b58bbbc4e32ffb3e63abcf05"><div class="ttname"><a href="../../d2/d9e/cbor_8h.html#a2f9efd78b58bbbc4e32ffb3e63abcf05">CborEncoder::data</a></div><div class="ttdeci">union CborEncoder::@19 data</div></div>
 <div class="ttc" id="acbor_8h_html_a38f51ceba8bc8a9b1cf7dd31e3f9c178aba7d7ca146facdc1b947c0bc91f98eaa"><div class="ttname"><a href="../../d2/d9e/cbor_8h.html#a38f51ceba8bc8a9b1cf7dd31e3f9c178aba7d7ca146facdc1b947c0bc91f98eaa">CborTagType</a></div><div class="ttdeci">@ CborTagType</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d9e/cbor_8h_source.html#l00088">cbor.h:88</a></div></div>
 <div class="ttc" id="acbor_8h_html_ab0597077e114257b39a7ad7478e85877"><div class="ttname"><a href="../../d2/d9e/cbor_8h.html#ab0597077e114257b39a7ad7478e85877">cbor_encode_text_string</a></div><div class="ttdeci">CBOR_API CborError cbor_encode_text_string(CborEncoder *encoder, const char *string, size_t length)</div></div>
 <div class="ttc" id="acbor_8h_html_ac7df91cad1cba43d5d0103284fc390fca5b995bd235307474d3715fa7b6c57e1f"><div class="ttname"><a href="../../d2/d9e/cbor_8h.html#ac7df91cad1cba43d5d0103284fc390fca5b995bd235307474d3715fa7b6c57e1f">CborValidateNoUnknownTagsSR</a></div><div class="ttdeci">@ CborValidateNoUnknownTagsSR</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d9e/cbor_8h_source.html#l00555">cbor.h:555</a></div></div>
@@ -895,7 +917,6 @@ $(document).ready(function(){initNavTree('d2/d9e/cbor_8h_source.html','../../');
 <div class="ttc" id="acbor_8h_html_a5d5e28c057157ea5776013d63bcd9de3"><div class="ttname"><a href="../../d2/d9e/cbor_8h.html#a5d5e28c057157ea5776013d63bcd9de3">cbor_value_get_tag</a></div><div class="ttdeci">static CborError cbor_value_get_tag(const CborValue *value, CborTag *result)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d9e/cbor_8h_source.html#l00396">cbor.h:396</a></div></div>
 <div class="ttc" id="acbor_8h_html_a38f51ceba8bc8a9b1cf7dd31e3f9c178a959e9111a04cb3bf4fe0d296a1fe94d2"><div class="ttname"><a href="../../d2/d9e/cbor_8h.html#a38f51ceba8bc8a9b1cf7dd31e3f9c178a959e9111a04cb3bf4fe0d296a1fe94d2">CborDoubleType</a></div><div class="ttdeci">@ CborDoubleType</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d9e/cbor_8h_source.html#l00095">cbor.h:95</a></div></div>
 <div class="ttc" id="acbor_8h_html_ac7df91cad1cba43d5d0103284fc390fca10336f196bcefe891702c93f163e6681"><div class="ttname"><a href="../../d2/d9e/cbor_8h.html#ac7df91cad1cba43d5d0103284fc390fca10336f196bcefe891702c93f163e6681">CborValidateBasic</a></div><div class="ttdeci">@ CborValidateBasic</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d9e/cbor_8h_source.html#l00561">cbor.h:561</a></div></div>
-<div class="ttc" id="acbor_8h_html_a8c5f39b66e6276b87c78d2e1456f995a"><div class="ttname"><a href="../../d2/d9e/cbor_8h.html#a8c5f39b66e6276b87c78d2e1456f995a">CborEncoder::data</a></div><div class="ttdeci">union CborEncoder::@11 data</div></div>
 <div class="ttc" id="acbor_8h_html_ae229fcb50cb076c9e1426b0849fbe800"><div class="ttname"><a href="../../d2/d9e/cbor_8h.html#ae229fcb50cb076c9e1426b0849fbe800">CborCOSE_Encrypt0Tag</a></div><div class="ttdeci">#define CborCOSE_Encrypt0Tag</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d9e/cbor_8h_source.html#l00133">cbor.h:133</a></div></div>
 <div class="ttc" id="acbor_8h_html_abf77a802de8b5c7f061e5dba201499aa"><div class="ttname"><a href="../../d2/d9e/cbor_8h.html#abf77a802de8b5c7f061e5dba201499aa">cbor_value_is_text_string</a></div><div class="ttdeci">static bool cbor_value_is_text_string(const CborValue *value)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d9e/cbor_8h_source.html#l00407">cbor.h:407</a></div></div>
 <div class="ttc" id="acbor_8h_html_a93897c06089709e75a0c34f49737e76b"><div class="ttname"><a href="../../d2/d9e/cbor_8h.html#a93897c06089709e75a0c34f49737e76b">cbor_value_is_float</a></div><div class="ttdeci">static bool cbor_value_is_float(const CborValue *value)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d9e/cbor_8h_source.html#l00497">cbor.h:497</a></div></div>
