@@ -1,42 +1,35 @@
 /*
-@licstart  The following is the entire license notice for the
-JavaScript code in this file.
+ @licstart  The following is the entire license notice for the JavaScript code in this file.
 
-Copyright (C) 1997-2019 by Dimitri van Heesch
+ The MIT License (MIT)
 
-This program is free software; you can redistribute it and/or modify
-it under the terms of version 2 of the GNU General Public License as published by
-the Free Software Foundation
+ Copyright (C) 1997-2020 by Dimitri van Heesch
 
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
-GNU General Public License for more details.
+ Permission is hereby granted, free of charge, to any person obtaining a copy of this software
+ and associated documentation files (the "Software"), to deal in the Software without restriction,
+ including without limitation the rights to use, copy, modify, merge, publish, distribute,
+ sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
 
-You should have received a copy of the GNU General Public License along
-with this program; if not, write to the Free Software Foundation, Inc.,
-51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+ The above copyright notice and this permission notice shall be included in all copies or
+ substantial portions of the Software.
 
-@licend  The above is the entire license notice
-for the JavaScript code in this file
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING
+ BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+ NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+ DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+ @licend  The above is the entire license notice for the JavaScript code in this file
 */
 var NAVTREE =
 [
   [ "Wirepas SDK", "index.html", [
-    [ "Single-MCU Operation Overview", "index.html", [
-      [ "Application", "index.html#application", null ],
-      [ "Wirepas Mesh Single MCU API", "index.html#single_mcu_api", null ],
-      [ "SDK libraries", "index.html#sdk_libraries", null ],
-      [ "Application-specific Hardware Abstraction Layer (HAL)", "index.html#sdk_hal", null ],
-      [ "Wirepas Mesh Stack", "index.html#wirepas_firmware", null ],
-      [ "Wirepas Mesh Bootloader", "index.html#bootloader", null ],
-      [ "Custom bootloader extension", "index.html#bootloader_extension", null ],
-      [ "The physical Hardware", "index.html#hardware", null ]
-    ] ],
+    [ "Single-MCU Operation Overview", "index.html", "index" ],
     [ "SDK Environment setup", "dd/d6a/sdk_environment.html", [
       [ "Installation of SDK Environment", "dd/d6a/sdk_environment.html#installation_of_sdk_environment", null ],
       [ "Flashing devices", "dd/d6a/sdk_environment.html#flashing_guideline", null ],
-      [ "Resources on Nordic nRF91x1", "dd/d6a/sdk_environment.html#nordic_resources", [
+      [ "Resources on Nordic nRF91x1", "dd/d6a/sdk_environment.html#nordic_resources_nRF91", [
         [ "Flash Memory available for application on nRF91x1", "dd/d6a/sdk_environment.html#flash_memory_nrf91x1", null ],
         [ "RAM Memory available for application on nRF91x1", "dd/d6a/sdk_environment.html#ram_memory_nrf91x1", null ],
         [ "Peripherals accessible by stack only", "dd/d6a/sdk_environment.html#peripherals_accessible_by_stack_only_nrf91x1", null ],
@@ -170,20 +163,20 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"d2/d43/compilersupport__p_8h.html#adba3934b16539fdaf7cb43ef27d9ae48",
-"d2/d9e/cbor_8h.html#ade6fa23a8fb3df9db434c69ca05d5ec1a2bbd089870757fddb6e08269f281b9ad",
-"d4/d27/wms__state_8h.html#a42584f0a814c647a1d733326491a5e43",
-"d5/d53/dsap__frames_8h.html#db/d71/structdsap__data__tx__frag__req__t",
-"d6/d50/wms__data_8h.html#aa03fbf2cdb28616e79aca69710c8b134a2c19a7699397df7b39155e4711bb762e",
-"d7/db3/external__flash__gd25wb256e_8h.html#adc29c2ff13d900c2f185ee95427fb06ca2e77f6709ec645b71b0eb8e3d1878129",
-"d8/d21/msap__frames_8h.html#aac52d153cf2fc2b39c4b36f58c2d500f",
-"d9/d27/provisioning__int_8h.html#aee542072e8ed4c6421604a90538f9dc2a9c062e96b8a51d81a67313b6b66d7471",
-"da/d1b/function__codes_8h.html#a5d932513e8009c2280045fe336ff4138ae295880f81c2880fbbe82dff772bccfb",
-"dc/d1b/rtc_8h.html#ad8acb73066972c2bbb5266e8a7b1254d",
-"dd/d2c/bl__interface_8h.html#abe48ebab96082c5c01ce0138b04ea55e",
-"de/d59/csap__frames_8h.html#affa7f91e558c86a776e25a749277ecfba5fbb0b0cda1085fc06f80b71e7daae59",
-"df/d6b/wms__system_8h.html#a055fd8a1c1565c12af35cd82010b2594a7f19392bb7901d7af8492a6b519e2675",
-"dir_63f034141c75d69ae84d9b10c256a1af.html"
+"d1/dd6/usart__multi_8h.html#ab2c3377e42ae915660c7e3061970f887",
+"d2/d9e/cbor_8h.html#a76e9c9acc63dd940da4ab7e91309f7b5adf6429cf3d900727c7c8e54625d8660b",
+"d3/dde/external__flash__gd25lb256e_8h.html#a683d17ded597237ef72e72c3853d34b2ad891db9babc6bc6668702faec35db238",
+"d5/d53/dsap__frames_8h.html#a458421a43d4f6dc515faf427bf579d00",
+"d6/d15/wms__memory__area_8h.html#aa6179869b89996a769b8bc0dd556c16e",
+"d6/da5/attribute__frames_8h.html#a51aee1e7416d9ccdb8d171407674e338",
+"d8/d21/msap__frames_8h.html#a6979a08b71f61cbf60394fde24db18edadc516ccef642bad20962fe03273a0aad",
+"d9/d27/provisioning__int_8h.html#a36110c53ac1383a67c577fdd92bfa3c5",
+"da/d1b/function__codes_8h.html#a5d932513e8009c2280045fe336ff4138a5455c386b50ae6ffbbf6b2231842a32c",
+"db/db1/waps__frames_8h.html#a4e0d5999f05d5d98291245accf2bd6b9",
+"dd/d2c/bl__interface_8h.html#a5c8c5fbb4b56f5d44cb03b3cdf30749f",
+"de/d59/csap__frames_8h.html#a2ee05bf9e631381c7730c7f67b69e85b",
+"df/d62/wms__settings_8h.html#ab5595093751eb628bf02025075cf9b31",
+"df/dc7/wms__joining_8h.html#a9206c5610842c7a75a39e9673ef03bfb"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
